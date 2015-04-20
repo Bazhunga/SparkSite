@@ -54,27 +54,31 @@
         opacity: 0.7;
 	}
         
+    a{
+        text-decoration: none;
+        font-weight: 700;
+        height: auto !important;
+        color:  aliceblue
+    }
+
 	</style>
 
 </head>
-<body fullbleed vertical layout unresolved>
-	<core-header-panel flex>
-	<core-toolbar id="mainheader">
-		<span id="logo">Spark</span>
-        <hr id="logo_bar"/>
-        <span flex id="logo_small">Design Club</span>
-		<!-- 	<span>Home</span>
-		<span>Projects</span>
-		<span>About</span>
-		<span>Contact</span> -->
-		<paper-tabs selected="0">
-			<paper-tab>Home</paper-tab>
-			<paper-tab>Projects</paper-tab>
-			<paper-tab>About</paper-tab>
-			<paper-tab>Contact</paper-tab>
-		</paper-tabs>
-	</core-toolbar>
-<p>Welcome to Spark!</p>
-</core-header-panel>
-</body>
+    <body fullbleed vertical layout unresolved>
+        <core-header-panel flex>
+        <core-toolbar id="mainheader">
+            <span id="logo">Spark</span>
+            <hr id="logo_bar"/>
+            <span flex id="logo_small">Design Club</span>
+            <paper-tabs selected="0">
+                <paper-tab><a href="page_home.html" >Home</a></paper-tab>
+                <paper-tab><a href="page_projects.html">Projects</a></paper-tab>
+                <paper-tab><a href="page_about.html">About</a></paper-tab>
+                <paper-tab><a href="page_contact.html">Contact</a></paper-tab>
+            </paper-tabs>
+        </core-toolbar>
+
+            <p>Welcome to Spark!</p>
+        </core-header-panel>
+    </body>
 </html>
