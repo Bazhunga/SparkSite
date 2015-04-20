@@ -1,84 +1,84 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
-	<link rel="import" href="elements/my-element.html">
-	<link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
-	<link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
-	<link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
-	<link rel="import" href="bower_components/core-icons/core-icons.html">
-	<link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:700,400' rel='stylesheet' type='text/css'>
+    <head>
+        <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+        <link rel="import" href="elements/home-bignews.html">
+        <link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
+        <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
+        <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
+        <link rel="import" href="bower_components/core-icons/core-icons.html">
+        <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+        <link href='http://fonts.googleapis.com/css?family=Raleway:700,400' rel='stylesheet' type='text/css'>
 
-	<style>
-	core-header-panel{
-		height: 100%;
-		overflow: auto;
-		-webkit-overflow-scrolling: touch;
-	}
-	core-toolbar{
-		background: #0175bc;
-        font-family: 'Raleway', sans-serif;
-        font-size: 2em;
-        padding-left: 0.23em;
-	}
-    core-toolbar #logo{
-        color: #e7ef24;
-        font-weight: 700;        
-    }
-    core-toolbar #logo_small{
-        color: aliceblue;
-        font-weight:400;
-        font-size: 0.5em;
-        position:relative;
-        height:25%
-    }
-    #logo_bar{
-        background: aliceblue;
-        height: 1.2em;
-        width: 2px;
-        margin-left: 0.1em;
-        margin-right: 0.1em;
-        border: none;
-    } 
-    
-	paper-tab{
-		padding-left: 2em;
-		padding-right: 2em;
-        color:aliceblue;
-        font-weight:700;
-        border-radius: 2em;
-	}
-	paper-tab /deep/ #ink {
-		color: #F5B949;
-        opacity: 0.7;
-	}
-        
-    a{
-        text-decoration: none;
-        font-weight: 700;
-        height: auto !important;
-        color:  aliceblue
-    }
+        <style>
+        core-header-panel{
+            height: 100%;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        core-toolbar{
+            background: #0175bc;
+            font-family: 'Raleway', sans-serif;
+            font-size: 2em;
+            padding-left: 0.23em;
+        }
+        core-toolbar #logo{
+            color: #e7ef24;
+            font-weight: 700;        
+        }
+        core-toolbar #logo_small{
+            color: aliceblue;
+            font-weight:400;
+            font-size: 0.5em;
+            position:relative;
+            height:25%
+        }
+        #logo_bar{
+            background: aliceblue;
+            height: 1.2em;
+            width: 2px;
+            margin-left: 0.1em;
+            margin-right: 0.1em;
+            border: none;
+        } 
 
-	</style>
+        paper-tab{
+            padding-left: 2em;
+            padding-right: 2em;
+            color:aliceblue;
+            font-weight:700;
+            border-radius: 2em;
+        }
+        paper-tab /deep/ #ink {
+            color: #F5B949;
+            opacity: 0.7;
+        }
 
-</head>
+        a{
+            text-decoration: none;
+            font-weight: 700;
+            height: auto !important;
+            color:  aliceblue
+        }
+
+        </style>
+
+    </head>
     <body fullbleed vertical layout unresolved>
         <core-header-panel flex>
-        <core-toolbar id="mainheader">
-            <span id="logo">Spark</span>
-            <hr id="logo_bar"/>
-            <span flex id="logo_small">Design Club</span>
-            <paper-tabs selected="0">
-                <paper-tab><a href="page_home.html" >Home</a></paper-tab>
-                <paper-tab><a href="page_projects.html">Projects</a></paper-tab>
-                <paper-tab><a href="page_about.html">About</a></paper-tab>
-                <paper-tab><a href="page_contact.html">Contact</a></paper-tab>
-            </paper-tabs>
-        </core-toolbar>
-
-            <p>Welcome to Spark!</p>
+            <core-toolbar id="mainheader">
+                <span id="logo">Spark</span>
+                <hr id="logo_bar"/>
+                <span flex id="logo_small">Design Club</span>
+                <paper-tabs selected="0">
+                    <paper-tab><a href="home.html" >Home</a></paper-tab>
+                    <paper-tab><a href="page_projects.html">Projects</a></paper-tab>
+                    <paper-tab><a href="page_about.html">About</a></paper-tab>
+                    <paper-tab><a href="page_contact.html">Contact</a></paper-tab>
+                </paper-tabs>
+            </core-toolbar>
+            <home-bignews></home-bignews>
         </core-header-panel>
+
     </body>
 </html>
