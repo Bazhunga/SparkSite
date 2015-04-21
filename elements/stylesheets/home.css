@@ -69,5 +69,7 @@ a{
     margin-right: 2em;
     margin-bottom: 2em;
     background:#383193;
-    
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: -2em;
 }
