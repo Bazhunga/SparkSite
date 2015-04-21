@@ -1,0 +1,73 @@
+core-header-panel{
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+core-toolbar{
+    background: #0175bc;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    padding-left: 0.23em;
+}
+core-toolbar #logo{
+    color: #e7ef24;
+    font-weight: 700;        
+}
+core-toolbar #logo_small{
+    color: aliceblue;
+    font-weight:400;
+    font-size: 0.5em;
+    position:relative;
+    height:25%
+}
+
+body{
+    background-image: url("../../images/md_toronto.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+    background-position:bottom;
+    vertical-align: bottom;    
+    overflow:hidden;
+    background-repeat:no-repeat;
+}
+
+#logo_bar{
+    background: aliceblue;
+    height: 1.2em;
+    width: 2px;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    border: none;
+} 
+
+paper-tab{
+    padding-left: 1.4em;
+    padding-right: 1.4em;
+    color:aliceblue;
+    font-weight:700;
+    border-radius: 2em;
+}
+paper-tab /deep/ #ink {
+    color: #F5B949;
+    opacity: 0.7;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 700;
+    height: auto !important;
+    color:  aliceblue
+}
+
+/*CONTAINERS*/
+
+.main_bignews_container{
+    float: left;
+    height: 20%;
+    margin-left:2em;
+    margin-top:2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    background:#383193;
+    
+}

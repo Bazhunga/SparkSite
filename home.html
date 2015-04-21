@@ -3,72 +3,25 @@
     <head>
         <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
         <link rel="import" href="elements/home-bignews.html">
+        <link rel="import" href="elements/projects-main.html">
         <link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
         <link rel="import" href="bower_components/core-animated-pages/core-animated-pages.html">
         <link rel="import" href="bower_components/core-scaffold/core-scaffold.html">
         <link rel="import" href="bower_components/core-animated-pages/transitions/slide-up.html">
+        <link rel="import" href="bower_components/core-layout-grid/core-layout-grid.html">
 
+        <link rel="stylesheet" type="text/css" href="elements/stylesheets/home.css">
+        
         <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
         <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
         <link rel="import" href="bower_components/core-icons/core-icons.html">
         <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+        <link rel="import" href="bower_components/paper-shadow/paper-shadow.html">
         <link href='http://fonts.googleapis.com/css?family=Raleway:700,400' rel='stylesheet' type='text/css'>
-
-        <style>
-        core-header-panel{
-            height: 100%;
-            overflow: auto;
-            -webkit-overflow-scrolling: touch;
-        }
-        core-toolbar{
-            background: #0175bc;
-            font-family: 'Raleway', sans-serif;
-            font-size: 2em;
-            padding-left: 0.23em;
-        }
-        core-toolbar #logo{
-            color: #e7ef24;
-            font-weight: 700;        
-        }
-        core-toolbar #logo_small{
-            color: aliceblue;
-            font-weight:400;
-            font-size: 0.5em;
-            position:relative;
-            height:25%
-        }
-        #logo_bar{
-            background: aliceblue;
-            height: 1.2em;
-            width: 2px;
-            margin-left: 0.1em;
-            margin-right: 0.1em;
-            border: none;
-        } 
-
-        paper-tab{
-            padding-left: 1.4em;
-            padding-right: 1.4em;
-            color:aliceblue;
-            font-weight:700;
-            border-radius: 2em;
-        }
-        paper-tab /deep/ #ink {
-            color: #F5B949;
-            opacity: 0.7;
-        }
-
-        a{
-            text-decoration: none;
-            font-weight: 700;
-            height: auto !important;
-            color:  aliceblue
-        }
-
-        </style>
-
+        
+        
     </head>
-    <body fullbleed vertical layout unresolved>
+    <body fullbleed vertical layout unresolved background="images/md_toronto.jpg">
 <!--        <core-scaffold id="scaffold">-->
             <template is="auto-binding" id="main">
                 <core-header-panel navigation flex>
@@ -84,15 +37,17 @@
                         </paper-tabs>
                     </core-toolbar>
                     <core-animated-pages selected="{{selected}}" transitions="slide-up">
-                        <section layout vertical center-center>
+                        <section>
                             <div slide-up>
-                                <home-bignews></home-bignews>
+                                <paper-shadow class="main_bignews_container" z="1">
+                                    <home-bignews></home-bignews>
+                                </paper-shadow>
                             </div>
                         </section>
 
                         <section>
                             <div slide-up>
-                                <p>Coming soon!</p>
+                                <projects-main></projects-main>
                             </div>
                         </section>
                     </core-animated-pages>            

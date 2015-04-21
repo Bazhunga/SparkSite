@@ -1,3 +1,5 @@
 #welcome{
-   font-size: 5em; 
+    font-size: 5em; 
+    padding-top: none;
+    color:aliceblue;
 }
