@@ -1,16 +1,18 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/core-ajax/core-ajax.html">
 <polymer-element name="home-bignews">
-   <template>
-      <span>Welcome to Spark!</span>
-      <!-- <core-ajax url="http://example.com/json" auto response="{{resp}}"></core-ajax>
-   	  <textarea value="{{resp}}"></textarea> -->
-   </template>
+    <template>
+        <link rel="stylesheet" href="stylesheets/home-bignews_style.css">
+        <div class="container">
+            <span id="welcome">Welcome to Spark!</span>
+        </div>
+      
+    </template>
     <script>
     Polymer({
-      ready: function() {
+        ready: function() {
         //...
-      }
+        }
     });
-  </script>
+    </script>   
 </polymer-element>

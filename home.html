@@ -4,6 +4,10 @@
         <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
         <link rel="import" href="elements/home-bignews.html">
         <link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
+        <link rel="import" href="bower_components/core-animated-pages/core-animated-pages.html">
+        <link rel="import" href="bower_components/core-scaffold/core-scaffold.html">
+        <link rel="import" href="bower_components/core-animated-pages/transitions/slide-up.html">
+
         <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
         <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
         <link rel="import" href="bower_components/core-icons/core-icons.html">
@@ -43,8 +47,8 @@
         } 
 
         paper-tab{
-            padding-left: 2em;
-            padding-right: 2em;
+            padding-left: 1.4em;
+            padding-right: 1.4em;
             color:aliceblue;
             font-weight:700;
             border-radius: 2em;
@@ -65,20 +69,36 @@
 
     </head>
     <body fullbleed vertical layout unresolved>
-        <core-header-panel flex>
-            <core-toolbar id="mainheader">
-                <span id="logo">Spark</span>
-                <hr id="logo_bar"/>
-                <span flex id="logo_small">Design Club</span>
-                <paper-tabs selected="0">
-                    <paper-tab><a href="home.html" >Home</a></paper-tab>
-                    <paper-tab><a href="page_projects.html">Projects</a></paper-tab>
-                    <paper-tab><a href="page_about.html">About</a></paper-tab>
-                    <paper-tab><a href="page_contact.html">Contact</a></paper-tab>
-                </paper-tabs>
-            </core-toolbar>
-            <home-bignews></home-bignews>
-        </core-header-panel>
+<!--        <core-scaffold id="scaffold">-->
+            <template is="auto-binding" id="main">
+                <core-header-panel navigation flex>
+                    <core-toolbar id="mainheader">
+                        <span id="logo">Spark</span>
+                        <hr id="logo_bar"/>
+                        <span flex id="logo_small">Design Club</span>
+                        <paper-tabs selected="{{selected}}">
+                            <paper-tab class="bartab"><a href="#home.html" >Home</a></paper-tab>
+                            <paper-tab class="bartab"><a href="#page_projects.html">Projects</a></paper-tab>
+                            <paper-tab class="bartab"><a href="#page_about.html">About</a></paper-tab>
+                            <paper-tab class="bartab"><a href="#page_contact.html">Contact</a></paper-tab>
+                        </paper-tabs>
+                    </core-toolbar>
+                    <core-animated-pages selected="{{selected}}" transitions="slide-up">
+                        <section layout vertical center-center>
+                            <div slide-up>
+                                <home-bignews></home-bignews>
+                            </div>
+                        </section>
 
+                        <section>
+                            <div slide-up>
+                                <p>Coming soon!</p>
+                            </div>
+                        </section>
+                    </core-animated-pages>            
+                </core-header-panel>
+            </template>
+<!--        </core-scaffold>-->
+        <script src="pageswitcher.js"></script>
     </body>
 </html>
