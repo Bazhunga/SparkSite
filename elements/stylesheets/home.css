@@ -63,8 +63,9 @@ a{
 
 .main_bignews_container{
     float: left;
+    width: 50%;
     height: 20%;
-    margin-left:5em;
+    margin-left:5.5em;
     margin-top:2em;
     margin-right: none;
     margin-bottom: 2em;
@@ -77,7 +78,7 @@ a{
     height: 20%;
     margin-left: none;
     margin-top:2em;
-    margin-right: 5em;
+    margin-right: 5.5em;
     margin-bottom: 2em;
     background:#645bcc;
     padding-left: 2em;

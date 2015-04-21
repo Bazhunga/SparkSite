@@ -18,6 +18,10 @@ hr{
     width: 100%;
     margin-top: -2em;
 }
+li{
+    font-size: 18px;
+    padding-top:0.5em;
+}
 #subtitle{
     font-size: 30px;
     font-weight:400;
