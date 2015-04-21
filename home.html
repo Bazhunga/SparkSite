@@ -3,11 +3,13 @@
     <head>
         <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
         <link rel="import" href="elements/home-bignews.html">
+        <link rel="import" href="elements/home-upcoming.html">
         <link rel="import" href="elements/projects-main.html">
         <link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
         <link rel="import" href="bower_components/core-animated-pages/core-animated-pages.html">
         <link rel="import" href="bower_components/core-scaffold/core-scaffold.html">
         <link rel="import" href="bower_components/core-animated-pages/transitions/slide-up.html">
+        <link rel="import" href="bower_components/core-animated-pages/transitions/slide-from-right.html">
         <link rel="import" href="bower_components/core-layout-grid/core-layout-grid.html">
 
         <link rel="stylesheet" type="text/css" href="elements/stylesheets/home.css">
@@ -37,9 +39,12 @@
                     </core-toolbar>
                     <core-animated-pages selected="{{selected}}" transitions="slide-up">
                         <section>
-                            <div slide-up>
-                                <paper-shadow class="main_bignews_container" z="3">
+                            <div>
+                                <paper-shadow slide-up class="main_bignews_container" z="3">
                                     <home-bignews></home-bignews>
+                                </paper-shadow>
+                                <paper-shadow slide-from-right class="main_upcoming_container" z="3">
+                                    <home-upcoming></home-upcoming>
                                 </paper-shadow>
                             </div>
                         </section>

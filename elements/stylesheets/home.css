@@ -64,12 +64,22 @@ a{
 .main_bignews_container{
     float: left;
     height: 20%;
-    margin-left:2em;
+    margin-left:5em;
     margin-top:2em;
-    margin-right: 2em;
+    margin-right: none;
     margin-bottom: 2em;
     background:#383193;
     padding-left: 2em;
     padding-right: 2em;
-    padding-top: -2em;
+}
+.main_upcoming_container{
+    float: right;
+    height: 20%;
+    margin-left: none;
+    margin-top:2em;
+    margin-right: 5em;
+    margin-bottom: 2em;
+    background:#645bcc;
+    padding-left: 2em;
+    padding-right: 2em;
 }

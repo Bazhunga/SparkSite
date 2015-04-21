@@ -1,0 +1,25 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/core-ajax/core-ajax.html">
+
+<polymer-element name="home-upcoming">
+    <template>
+        <link rel="stylesheet" href="stylesheets/home-upcoming_style.css">
+        <div class="container">
+            <p class="title_text" id="title">Coming up</p>
+            <hr>
+            <ul class="title_text" #id="this_week">
+                <li class="bullet">Cersei Lannister kill Margarine Tyrell.</li>
+                <li>Jon Snow finalizes knows things</li>
+                <li>Daenerys meets her more mont than jorah askin' forah</li>
+            </ul>
+        </div>
+
+    </template>
+    <script>
+        Polymer({
+            ready: function() {
+                //...
+            }
+        });
+    </script>   
+</polymer-element>
